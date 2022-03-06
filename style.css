@@ -1,0 +1,85 @@
+:root {
+  /* size */
+  --size-button: 40px;
+}
+body {
+  background-color: gray;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  cursor: pointer;
+  transition: transform 300ms ease;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+/* div */
+#mainLogo {
+  display: block;
+  text-align: center;
+}
+#buttons {
+  display: flex;
+}
+#buttons img {
+  width: var(--size-button);
+  height: var(--size-button);
+}
+button {
+  border-radius: 20px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transition: transform 300ms ease;
+  margin-left: 20px;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+#buttons .btn_Y {
+  background-color: yellow;
+}
+#buttons .btn_B {
+  background-color: blueviolet;
+}
+#buttons .btn_P {
+  background-color: pink;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* object? */
+.imgBtn {
+  width: var(--size-button);
+  height: var(--size-button);
+}
+.colorBtn {
+  width: calc(var(--size-button) * 2);
+  height: var(--size-button);
+}
+
+.items {
+  width: 60%;
+  height: 60%;
+  overflow-y: scroll;
+}
+.item {
+  background-color: salmon;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.item img {
+  width: var(--size-button);
+  height: var(--size-button);
+}
+.item span {
+  margin-left: 10px;
+}
